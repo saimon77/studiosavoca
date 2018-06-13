@@ -171,10 +171,10 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.4</version>
 					<configuration>
-							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>target</outputDirectory>
-							<warName>ROOT</warName>
-						</configuration>
+						<warSourceDirectory>src/main/webapp</warSourceDirectory>
+						<warName>webApp</warName>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
