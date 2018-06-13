@@ -1,0 +1,10 @@
+it\simone\webApp\config\AppInitializer.class
+it\simone\webApp\service\ServiceUserImpl.class
+it\simone\webApp\config\AppConfig.class
+it\simone\webApp\config\HibernateConfig.class
+it\simone\webApp\controller\HomeController.class
+it\simone\webApp\Dao\UserDao.class
+it\simone\webApp\Dao\UserDaoImpl.class
+it\simone\webApp\service\ServiceUser.class
+it\simone\webApp\model\User.class
+it\simone\webApp\config\HibernateConfig$1.class
