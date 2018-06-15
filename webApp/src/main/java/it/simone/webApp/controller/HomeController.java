@@ -36,6 +36,7 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}." + locale);
 
+		System.out.println("ver 1");
 		System.out.println(env.getProperty("dataSource.url"));
 		System.out.println(env.getProperty("dataSource.user"));
 		System.out.println(env.getProperty("dataSource.pwd"));
