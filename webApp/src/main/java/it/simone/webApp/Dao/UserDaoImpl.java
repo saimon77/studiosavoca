@@ -28,6 +28,7 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public void saveUser(User us) {
+		logger.info("sono in save dao");
 		Session s = getSession();
 		s.save(us);
 
