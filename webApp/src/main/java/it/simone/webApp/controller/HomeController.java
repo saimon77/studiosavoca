@@ -1,7 +1,10 @@
 package it.simone.webApp.controller;
 
 import java.sql.Timestamp;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.hibernate.exception.ConstraintViolationException;
@@ -32,28 +35,28 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}." + locale);
 
-		// salvaUser();
+		salvaUser();
 
 		// List<User> lista = serv.getUserbByField("nome", "simone");
 		// List<User> lista = serv.getUser();
 
-		// Map<String, Object> values = new HashMap<String, Object>();
-		// values.put("nome", "simone");
-		// values.put("cognome", "bedotti2");
-		// List<User> lista = null;
-		// try {
-		// lista = serv.getUserbByFields(values);
-		// } catch (Exception e) {
-		// logger.error(e.getMessage());
-		// }
-		//
-		// if (lista != null && lista.size() > 0) {
-		// for (User user : lista) {
-		// logger.info(user);
-		// }
-		// } else {
-		// logger.info("nessun elemento trovato");
-		// }
+		Map<String, Object> values = new HashMap<String, Object>();
+		values.put("nome", "simone");
+		values.put("cognome", "bedotti2");
+		List<User> lista = null;
+		try {
+			lista = serv.getUserbByFields(values);
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+		}
+
+		if (lista != null && lista.size() > 0) {
+			for (User user : lista) {
+				logger.info(user);
+			}
+		} else {
+			logger.info("nessun elemento trovato");
+		}
 		return "home";
 	}
 
