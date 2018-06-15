@@ -32,7 +32,7 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}." + locale);
 
-		// salvaUser();
+		salvaUser();
 
 		// List<User> lista = serv.getUserbByField("nome", "simone");
 		// List<User> lista = serv.getUser();
